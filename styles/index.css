@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    padding-top:80px;
+    background-color: rgb(75, 116, 102);
+}
+header{
+    background-color: blanchedalmond;
+}
+.container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+.info{
+    width: 120px;
+    flex: 1;
+    text-align: right;
+    padding: 30px;
+    font-size: 20px;
+}
+
+
+.logo{
+    margin-top: 30px;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 65px;
+    letter-spacing: 15px;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+@keyframes back{
+    100%{
+        background-position: 200px 0;
+  
+    }
+}
+.gallery{
+    width: 1000px;
+    margin: auto;
+}
+.gallery__photo{
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 20px 40px;
+    animation: imageZoom 3.5s ease infinite;
+   /* animation-direction: reverse;
+    animation-fill-mode: none;*/
+}
+@keyframes imageZoom{
+    0%{transform: scale(1) rotate(0deg);}
+    50%{transform: scale(1.1) rotate(15deg);}
+    
+}
+.gallery__photo:hover{
+    outline: 15px solid rgb(233, 134, 180);
+    transform: scale(1.05) translateY(-20PX);
+    animation-play-state: paused;
+}
+.content{
+    margin-top: 50px;
+    font-family: 'Andada Pro', serif;
+    font-size: large;
+    display: flex;
+    flex-wrap: wrap;
+    color: cornsilk;
+}
+.content-top{
+    color: rgb(20, 220, 87);
+    font-size: 30px;
+}
+.content-info{
+    line-height: 26px;
+}
+
+
+
+
+
+
